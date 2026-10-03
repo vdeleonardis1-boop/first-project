@@ -1,0 +1,116 @@
+:root {
+  --background: #f5f5f7;
+  --text: #1d1d1f;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 28px;
+}
+main img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+header {
+  background-color: #ffffff;
+  padding: 16px 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  padding: 10px 18px;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 8px;
+}
+nav a:hover {
+  background-color: var(--background);
+}
+nav a[aria-current="page"] {
+  background-color: #0066cc;
+  color: #ffffff;
+}
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+.interests {
+  margin-top: 48px;
+}
+.interests li {
+  margin-bottom: 12px;
+}
+.cv-page section {
+  background-color: #ffffff;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+}
+.cv-page h2 {
+  margin-top: 0;
+}
+.cv-page h3 {
+  margin-top: 8px;
+}
+.cv-page p {
+  margin: 8px 0;
+}
+.cv-page li {
+  margin-bottom: 8px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 32px;
+}
+.project-card {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+}
+.project-card a {
+  color: #0066cc;
+}
+.project-card a:hover {
+  color: #004f9e;
+}
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .about-layout {
+    grid-template-columns: 320px 1fr;
+  }
+}
